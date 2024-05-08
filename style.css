@@ -1,0 +1,383 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/*            Header           */
+
+header {
+    display: flex;
+    /* position: fixed; */
+    width: 100%;
+    height: 100px;
+    background-color: #191D28;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+}
+
+header .h1 {
+    color: #ebc76d;
+    font-size: 35px;
+    text-decoration: none;
+    font-family: none;
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+}
+
+header li {
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+header li a:hover {
+    color: #ebc76d;
+}
+
+header .lang {
+    margin-left: 15px;
+}
+
+header .lang a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 10px;
+}
+
+header .lang a:hover {
+    color: #ebc76d;
+}
+
+/*            Home           */
+
+.home-section {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 90px);
+    background-color: #191D28;
+}
+
+.home-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-width: 600px;
+    margin-left: 250px;
+}
+
+.home-section .hello {
+    color: #ebc76d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.home-section h2 {
+    color: #fff;
+    font-size: 50px;
+    margin: 20px 0 10px;
+}
+
+.home-section span {
+    color: #ebc76d;
+}
+
+.home-section .text {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 70px;
+}
+
+.home-section button {
+    width: 170px;
+    height: 40px;
+    background-color: #ebc76d;
+    color: #000;
+    font-size: 15px;
+    cursor: grab;
+    transition: 0.3s;
+}
+
+.home-section button:hover {
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.background {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: end;
+}
+
+.background img {
+    width: 90%;
+}
+
+.icons {
+    display: flex;
+    list-style: none;
+}
+
+.home-section .icons {
+    position: absolute;
+    left: 70px;
+    bottom: 50px;
+}
+
+.icons a {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.icons a:hover {
+    color: #ebc76d;
+}
+
+.scroll {
+    color: #ebc76d;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    position: absolute;
+    font-size: 11px;
+    font-weight: 600;
+    right: -10px;
+    bottom: 80px;
+}
+
+/*           About          */
+
+.about-section {
+    height: 100vh;
+    background-color: #161922;
+}
+
+.about-section .container {
+    display: flex;
+    height: 100%;
+    margin: 0 250px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about-section .image {
+    width: 50%;
+}
+
+.about-section .image img {
+    width: 100%;
+}
+
+.about-section .text {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.about-section .text h2 {
+    color: #ebc76d;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.about-section .text p {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.about-section .text .mark {
+    width: 100px;
+}
+
+.about-section .text button {
+    width: 140px;
+    height: 40px;
+    background-color: #ebc76d;
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: grab;
+    margin-right: 20px;
+}
+
+.about-section .skills {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.about-section .skills h2 {
+    display: flex;
+    color: #ebc76d;
+    transform: rotate(-90deg);
+    width: 145px;
+}
+
+.about-section .skills .skills-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 0 ;
+}
+
+.about-section .skill {
+    width: 380px;
+    margin: 40px 60px 0 0;
+}
+
+.about-section .skill p {
+    display: flex;
+    justify-content: space-between;
+    color: #aaa;
+    margin-bottom: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-section .skill hr {
+    position: relative;
+    height: 5px;
+    background-color: #000;
+    border: none;
+}
+
+.about-section .skill hr::after {
+    content: "";
+    position: absolute;
+    background-color: #ebc76d;
+    height: 5px;
+    z-index: 2;
+}
+
+.about-section .skill:nth-child(1) hr::after {
+    width: 90%;
+}
+
+.about-section .skill:nth-child(2) hr::after {
+    width: 97%;
+}
+
+.about-section .skill:nth-child(3) hr::after {
+    width: 95%;
+}
+
+.about-section .skill:nth-child(4) hr::after {
+    width: 92%;
+}
+
+/*            Servics          */
+
+.servics {
+    height: 100vh;
+    width: 100%;
+    background-color: #191D28;
+}
+
+.servics .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 250px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ebc76d;
+}
+
+.title p {
+    font-size: 12px;
+    color: #aaa;
+    font-weight: 600;
+    width: 450px;
+}
+
+.servics .cards {
+    display: flex;
+    overflow: hidden;   
+    justify-content: space-between; 
+    padding: 30px;
+}
+
+.servics .card {
+    width: 300px;
+    height: 220px;
+    text-align: center;
+    border: 4px #161922 solid;
+    padding: 20px;
+    color: #aaa;
+    transition: 0.4s;
+}
+
+.servics .card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.servics .card i {
+    color: #ebc76d;
+    font-size: 28px;
+    padding: 10px;
+}
+
+.servics .card h3 {
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.servics .card:hover h3 {
+    color: #ebc76d;
+}
+
+.servics .card p {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 20px;
+}
